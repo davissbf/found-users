@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import githubBackground from '../assets/github-background.svg';
 
 export default createGlobalStyle`
   * {
@@ -13,7 +14,8 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.colors.background};
+    background: ${(props) =>
+      props.theme.colors.background} url(${githubBackground}) 70% top no-repeat;
     -webkit-font-smoothing: antialiased !important;
     padding: 1rem;
   }

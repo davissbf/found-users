@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Normalize } from 'styled-normalize';
 
-import Routes from './routes';
+import Routes from './routes/routes';
 
 import Theme from './styles/Theme';
 import GlobalStyle from './styles/global';

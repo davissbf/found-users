@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 
 const theme = {
-  // Palette from FlatUI - https://flatuicolors.com/palette/defo
   colors: {
     white: '#ffffff',
     black: '#000000',
@@ -37,19 +36,29 @@ const theme = {
     danger: '#f37272',
     light: '#ecf0f1',
     dark: '#233240',
-    background: '#f37272',
-    text: '#fff',
+    background: '#f0f0f5',
+    container: '#2d2d2d',
+    text: '#3a3a3a',
     link: '#3498db',
 
     // Brands
-    devSamurai: '#f37272',
+    apiGit: '#f0f0f5',
   },
   fonts: ['Open Sans', 'Arial', 'Helvetica', 'sans-serif'].join(','),
   fontSizes: {
     small: '.8rem',
-    normal: '1.2rem',
-    large: '1.3rem',
-    title: '1.8rem',
+    normal: '1rem',
+    large: '1.2rem',
+    title: '1.3rem',
+    subtitle: '1.25rem',
+  },
+  breakpoints: {
+    xs: '0',
+    sm: '576px',
+    md: '768px',
+    lg: '992px',
+    xl: '1200px',
+    xxl: '1400px',
   },
 };
 
