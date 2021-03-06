@@ -17,7 +17,6 @@ export default createGlobalStyle`
     background: ${(props) =>
       props.theme.colors.background} url(${githubBackground}) 70% top no-repeat;
     -webkit-font-smoothing: antialiased !important;
-    padding: 1rem;
   }
 
   a {
