@@ -4,7 +4,7 @@ export const Container = styled.main`
   display: flex;
   min-height: 100vh;
 
-  @media scren and (max-width: ${(props) => props.theme.breakpoints.md}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     flex-direction: column;
   }
 `;
@@ -13,7 +13,7 @@ export const Sidebar = styled.aside`
   background: ${(props) => props.theme.colors.secondBackground};
   min-width: 20rem;
   max-width: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
 `;
 
 export const Main = styled.section`
@@ -23,11 +23,11 @@ export const Main = styled.section`
   overflow-y: hidden;
   padding: 40px;
 
-  @media scren and (max-width: ${(props) => props.theme.breakpoints.md}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
     height: 100%;
   }
 
-  @media scren and (max-width: ${(props) => props.theme.breakpoints.sm}) {
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.sm}) {
     padding: 40px 20px;
   }
 `;
