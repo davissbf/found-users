@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { shade } from 'polished';
 
 export const Container = styled.div`
@@ -42,23 +43,23 @@ export const Form = styled.div`
       color: ${(props) => props.theme.colors.metalDark};
     }
   }
+`;
 
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+export const Button = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 210px;
-    height: 70px;
-    background: #04d361;
-    border-radius: 0px 5px 5px 0px;
-    border: 0;
-    color: ${(props) => props.theme.colors.white};
-    font-weight: bold;
-    transition: background-color 0.2s;
+  width: 210px;
+  height: 70px;
+  background: #04d361;
+  border-radius: 0px 5px 5px 0px;
+  border: 0;
+  color: ${(props) => props.theme.colors.white};
+  font-weight: bold;
+  transition: background-color 0.2s;
 
-    &:hover {
-      background: ${shade(0.2, '#04d361')};
-    }
+  &:hover {
+    background: ${shade(0.2, '#04d361')};
   }
 `;
