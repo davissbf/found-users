@@ -1,10 +1,12 @@
 import React from 'react';
 
+import Repository from './Repository';
+
 import { Container } from './styles';
 
 const Repositories = () => (
   <Container>
-    <h1>Repositories</h1>
+    <Repository />
   </Container>
 );
 

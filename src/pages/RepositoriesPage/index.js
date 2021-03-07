@@ -2,7 +2,7 @@ import React from 'react';
 
 import Profile from './Profile';
 import Filter from './Filter';
-import Repositories from './repositories';
+import Repositories from './Repositories';
 
 import { Container, Sidebar, Main } from './styles';
 
