@@ -27,7 +27,7 @@ export default createGlobalStyle`
   }
 
   body, input, p, a, button {
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.white};
     font-size: ${(props) => props.theme.fontSizes.normal};
     font-family: ${(props) => props.theme.fonts};
   }
