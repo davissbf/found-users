@@ -7,6 +7,11 @@ import { Container } from './styles';
 const Repositories = () => (
   <Container>
     <Repository />
+    <Repository />
+    <Repository />
+    <Repository />
+    <Repository />
+    <Repository />
   </Container>
 );
 
