@@ -9,6 +9,7 @@ import { Container, Sidebar, Main } from './styles';
 const RepositoriePage = () => {
   const user = {
     login: 'Davi Souza',
+    name: 'Davi Souza',
     avatar_url: 'https://avatars.githubusercontent.com/u/53843375?v=4',
     followers: 0,
     followings: 0,
