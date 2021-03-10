@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { MdGroup, MdWork, MdLocationCity, MdLink } from 'react-icons/md';
+import { MdGroup, MdLocationCity, MdWork, MdLink } from 'react-icons/md';
+
 import { Container, Header, Avatar, Login, Name, Inner, Data } from './styles';
 
 const Profile = ({ user }) => (
@@ -13,20 +14,17 @@ const Profile = ({ user }) => (
     </Header>
     <Inner>
       <Data>
-        {' '}
         <MdGroup size={20} />
-        {user.followings}&nbsp;<i>seguidores</i>&nbsp;&middot;&nbsp;
+        {user.following}&nbsp;<i>seguidores</i>&nbsp;&middot;&nbsp;
         {user.followers}&nbsp;<i>seguindo</i>
       </Data>
       {user.company && (
         <Data>
-          {' '}
           <MdWork size={20} /> {user.company}
         </Data>
       )}
       {user.location && (
         <Data>
-          {' '}
           <MdLocationCity size={20} /> {user.location}
         </Data>
       )}
@@ -46,7 +44,7 @@ Profile.propTypes = {
     name: PropTypes.string.isRequired,
     avatar_url: PropTypes.string.isRequired,
     followers: PropTypes.number.isRequired,
-    followings: PropTypes.number.isRequired,
+    following: PropTypes.number.isRequired,
     company: PropTypes.string,
     blog: PropTypes.string,
     location: PropTypes.string,
