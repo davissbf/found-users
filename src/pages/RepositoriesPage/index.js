@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 
 import Profile from './Profile';
@@ -5,6 +6,8 @@ import Filter from './Filter';
 import Repositories from './Repositories';
 
 import { Container, Sidebar, Main } from './styles';
+
+import { getLangsFrom } from '../../services/languages';
 
 const RepositoriePage = () => {
   const user = {
@@ -47,21 +50,17 @@ const RepositoriePage = () => {
       name: 'Repo 5',
       description: 'Descrição',
       html_url: 'https://davissbf.github.io/myportifolioreact/',
-      language: 'Java',
+      language: 'TypeScript',
     },
     {
       name: 'Repo 6',
       description: 'Descrição',
       html_url: 'https://davissbf.github.io/myportifolioreact/',
-      language: 'TypeScript',
+      language: 'Ruby',
     },
   ];
 
-  const languages = [
-    { name: 'JavaScript', count: 2, color: '#f1c40f' },
-    { name: 'Shell', count: 2, color: '#95a5a6' },
-    { name: 'PHP', count: 1, color: '#3498db' },
-  ];
+  const languages = getLangsFrom(repositories);
 
   return (
     <Container>
