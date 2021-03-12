@@ -23,36 +23,42 @@ const RepositoriePage = () => {
 
   const repositories = [
     {
+      id: '1',
       name: 'Repo 1',
       description: 'Descrição',
       html_url: 'https://davissbf.github.io/myportifolioreact/',
       language: 'JavaScript',
     },
     {
+      id: '2',
       name: 'Repo 2',
       description: 'Descrição',
       html_url: 'https://davissbf.github.io/myportifolioreact/',
       language: 'JavaScript',
     },
     {
+      id: '3',
       name: 'Repo 3',
       description: 'Descrição',
       html_url: 'https://davissbf.github.io/myportifolioreact/',
       language: 'PHP',
     },
     {
+      id: '4',
       name: 'Repo 4',
       description: 'Descrição',
       html_url: 'https://davissbf.github.io/myportifolioreact/',
       language: 'Ruby',
     },
     {
+      id: '5',
       name: 'Repo 5',
       description: 'Descrição',
       html_url: 'https://davissbf.github.io/myportifolioreact/',
       language: 'TypeScript',
     },
     {
+      id: '6',
       name: 'Repo 6',
       description: 'Descrição',
       html_url: 'https://davissbf.github.io/myportifolioreact/',
@@ -69,7 +75,7 @@ const RepositoriePage = () => {
         <Filter languages={languages} />
       </Sidebar>
       <Main>
-        <Repositories />
+        <Repositories repositories={repositories} />
       </Main>
     </Container>
   );
