@@ -6,8 +6,8 @@ export const Container = styled.div`
   justify-content: space-between;
 
   background: rgba(0, 0, 0, 0.25);
-  border-left: 3px solid;
-  ${(props) => props.color || props.theme.colors.champagneDark};
+  border-left: 3px solid
+    ${(props) => props.color || props.theme.colors.champagneDark};
   padding: 1rem;
 `;
 

@@ -16,7 +16,7 @@ const RepositoriePage = () => {
     name: 'Davi Souza',
     avatar_url: 'https://avatars.githubusercontent.com/u/53843375?v=4',
     followers: 0,
-    followings: 0,
+    following: 0,
     company: null,
     blog: 'https://davissbf.github.io/myportifolioreact/',
     location: 'Brasília',
@@ -84,7 +84,10 @@ const RepositoriePage = () => {
         />
       </Sidebar>
       <Main>
-        <Repositories repositories={repositories} />
+        <Repositories
+          repositories={repositories}
+          currentLanguage={currentLanguage}
+        />
       </Main>
     </Container>
   );

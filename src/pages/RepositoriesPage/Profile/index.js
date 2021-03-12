@@ -44,7 +44,7 @@ Profile.propTypes = {
     name: PropTypes.string.isRequired,
     avatar_url: PropTypes.string.isRequired,
     followers: PropTypes.number.isRequired,
-    following: PropTypes.number.isRequired,
+    following: PropTypes.number,
     company: PropTypes.string,
     blog: PropTypes.string,
     location: PropTypes.string,
