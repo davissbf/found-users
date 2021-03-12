@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState } from 'react';
 
 import Profile from './Profile';
 import Filter from './Filter';
@@ -10,6 +9,8 @@ import { Container, Sidebar, Main } from './styles';
 import { getLangsFrom } from '../../services/languages';
 
 const RepositoriePage = () => {
+  const [currentLanguage, setCurrenteLanguage] = useState();
+
   const user = {
     login: 'Davi Souza',
     name: 'Davi Souza',
@@ -68,11 +69,19 @@ const RepositoriePage = () => {
 
   const languages = getLangsFrom(repositories);
 
+  const onFilterClick = (language) => {
+    setCurrenteLanguage(language);
+  };
+
   return (
     <Container>
       <Sidebar>
         <Profile user={user} />
-        <Filter languages={languages} />
+        <Filter
+          languages={languages}
+          currentLanguage={currentLanguage}
+          onClick={onFilterClick}
+        />
       </Sidebar>
       <Main>
         <Repositories repositories={repositories} />
