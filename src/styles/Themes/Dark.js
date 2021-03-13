@@ -1,9 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import { ThemeProvider } from 'styled-components';
-
 const dark = {
+  title: 'dark',
+
   colors: {
     white: '#ffffff',
     greyLight: '#dddddd',
@@ -53,12 +50,6 @@ const dark = {
   },
 };
 
-const Dark = ({ children }) => (
-  <ThemeProvider theme={dark}>{children}</ThemeProvider>
-);
-
-Dark.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+const Dark = dark;
 
 export default Dark;

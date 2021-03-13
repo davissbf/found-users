@@ -1,4 +1,6 @@
 const light = {
+  title: 'light',
+
   colors: {
     white: '#ffffff',
     greyLight: '#dddddd',

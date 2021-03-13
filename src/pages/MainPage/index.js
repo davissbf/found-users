@@ -19,11 +19,12 @@ const MainPage = () => {
           value={login}
           onChange={(event) => setLogin(event.target.value)}
         />
-        <Button to={`/${login}/repositories`}>
+        <Button to="repositories">
           <FiSearch size={46} />
         </Button>
       </Form>
     </Container>
   );
 };
+
 export default MainPage;
