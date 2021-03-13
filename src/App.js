@@ -4,7 +4,7 @@ import { Normalize } from 'styled-normalize';
 
 import Routes from './routes/routes';
 
-import Theme from './styles/Theme';
+import Theme from './styles/Themes/globalTheme';
 import GlobalStyle from './styles/global';
 
 function App() {

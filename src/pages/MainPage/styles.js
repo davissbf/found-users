@@ -18,6 +18,7 @@ export const Container = styled.div`
 
   h1 {
     font-size: 2.5rem;
+    color: ${(props) => props.theme.colors.metalDark};
   }
 `;
 
@@ -49,7 +50,7 @@ export const Input = styled.input`
   font-size: 17px;
   border-radius: 5px 0 0 5px;
   padding: 0 24px;
-  background-color: ${(props) => props.theme.buttonColor.fourth};
+  background-color: ${(props) => props.theme.buttonColor.backgroundColor};
   color: ${(props) => props.theme.colors.metalDark};
 
   &:focus {
@@ -80,7 +81,7 @@ export const Button = styled(Link)`
   border: 0;
   border-radius: 0 5px 5px 0;
   padding: 0 24px;
-  background-color: ${(props) => props.theme.buttonColor.fourth};
+  background-color: ${(props) => props.theme.buttonColor.backgroundColor};
   color: ${(props) => props.theme.colors.metalDark};
 
   color: ${(props) => props.theme.buttonColor.primary};

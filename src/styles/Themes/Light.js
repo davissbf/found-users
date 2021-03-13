@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 
 import { ThemeProvider } from 'styled-components';
 
-const theme = {
+const light = {
   colors: {
     white: '#ffffff',
+    greyLight: '#dddddd',
     black: '#000000',
     turquese: '#1abc9c',
     turqueseDark: '#16a085',
@@ -46,37 +47,19 @@ const theme = {
     // Brands
     apiGit: '#f0f0f5',
   },
-  fonts: ['Open Sans', 'Arial', 'Helvetica', 'sans-serif'].join(','),
-  fontSizes: {
-    small: '.8rem',
-    normal: '1rem',
-    large: '1.2rem',
-    title: '1.3rem',
-    subtitle: '1.25rem',
-  },
-  breakpoints: {
-    xs: '0',
-    vsm: '600px',
-    sm: '576px',
-    md: '768px',
-    lg: '992px',
-    xl: '1200px',
-    xxl: '1400px',
-  },
   buttonColor: {
     primary: '#babecc',
     secondary: '#fff',
-    third: '#ebecf0',
-    fourth: '#f0f0f5',
+    backgroundColor: '#f0f0f5',
   },
 };
 
-const Theme = ({ children }) => (
-  <ThemeProvider theme={theme}>{children}</ThemeProvider>
+const Light = ({ children }) => (
+  <ThemeProvider theme={light}>{children}</ThemeProvider>
 );
 
-Theme.propTypes = {
+Light.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Theme;
+export default Light;
