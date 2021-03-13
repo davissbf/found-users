@@ -1,20 +1,22 @@
 import React from 'react';
-
+import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
+
+import Light from './styles/Themes/Light';
 
 import Routes from './routes/routes';
 
-import Theme from './styles/Themes/globalTheme';
+import GlobalTheme from './styles/Themes/GlobalTheme';
 import GlobalStyle from './styles/global';
 
-function App() {
-  return (
-    <Theme>
+const App = () => (
+  <ThemeProvider theme={Light}>
+    <GlobalTheme>
       <Routes />
       <GlobalStyle />
       <Normalize />
-    </Theme>
-  );
-}
+    </GlobalTheme>
+  </ThemeProvider>
+);
 
 export default App;
