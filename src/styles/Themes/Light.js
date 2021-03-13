@@ -1,8 +1,3 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import { ThemeProvider } from 'styled-components';
-
 const light = {
   colors: {
     white: '#ffffff',
@@ -54,12 +49,6 @@ const light = {
   },
 };
 
-const Light = ({ children }) => (
-  <ThemeProvider theme={light}>{children}</ThemeProvider>
-);
-
-Light.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+const Light = light;
 
 export default Light;
