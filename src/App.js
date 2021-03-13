@@ -4,7 +4,7 @@ import { Normalize } from 'styled-normalize';
 
 import ThemeSwitcher from './components/ThemeSwitcher/index';
 import Light from './styles/Themes/Light';
-// import Dark from './styles/Themes/Dark';
+import Dark from './styles/Themes/Dark';
 
 import Routes from './routes/routes';
 
@@ -15,11 +15,11 @@ const App = () => {
   const [theme, setTheme] = useState(Light);
 
   const toggleTheme = () => {
-    setTheme(theme.title === 'light' ? 'dark' : 'light');
+    setTheme(theme.title === 'light' ? Dark : Light);
   };
 
   return (
-    <ThemeProvider theme={Light}>
+    <ThemeProvider theme={theme}>
       <GlobalTheme>
         <ThemeSwitcher toggleTheme={toggleTheme} />
         <Routes />
