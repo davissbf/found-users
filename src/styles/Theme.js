@@ -38,6 +38,7 @@ const theme = {
     dark: '#233240',
     background: '#f0f0f5',
     secondBackground: '#111',
+    thirdBackground: '#ebecf0',
     container: '#2d2d2d',
     text: '#3a3a3a',
     link: '#3498db',
@@ -55,11 +56,18 @@ const theme = {
   },
   breakpoints: {
     xs: '0',
+    vsm: '600px',
     sm: '576px',
     md: '768px',
     lg: '992px',
     xl: '1200px',
     xxl: '1400px',
+  },
+  buttonColor: {
+    primary: '#babecc',
+    secondary: '#fff',
+    third: '#ebecf0',
+    fourth: '#f0f0f5',
   },
 };
 

@@ -3,7 +3,7 @@ import { FiSearch } from 'react-icons/fi';
 
 import logoIgm from '../../assets/github-logo.svg';
 
-import { Container, Form, Button } from './styles';
+import { Container, Form, Input, Button } from './styles';
 
 const MainPage = () => {
   const [login, setLogin] = useState('');
@@ -13,7 +13,7 @@ const MainPage = () => {
       <img src={logoIgm} alt="Logo Github" />
       <h1>API Github</h1>
       <Form>
-        <input
+        <Input
           type="text"
           placeholder="Digite o nome do usuário"
           value={login}

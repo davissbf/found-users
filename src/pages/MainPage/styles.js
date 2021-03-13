@@ -29,18 +29,43 @@ export const Form = styled.div`
   width: 100%;
   max-width: 583px;
 
-  input {
-    height: 70px;
-    width: 100%;
-    padding: 0 24px;
-    border: 0;
-    border-radius: 5px 0 0 5px;
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.vsm}) {
+    display: block;
+  }
+`;
+
+export const Input = styled.input`
+  margin-right: 8px;
+  height: 70px;
+  width: 100%;
+  box-shadow: inset 2px 2px 5px ${(props) => props.theme.buttonColor.primary},
+    inset -5px -5px 10px ${(props) => props.theme.buttonColor.secondary};
+  transition: all 0.2s ease-in-out;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  border: 0;
+  font-size: 17px;
+  border-radius: 5px 0 0 5px;
+  padding: 0 24px;
+  background-color: ${(props) => props.theme.buttonColor.fourth};
+  color: ${(props) => props.theme.colors.metalDark};
+
+  &:focus {
+    box-shadow: inset 1px 1px 2px ${(props) => props.theme.buttonColor.primary},
+      inset -1px -1px 2px ${(props) => props.theme.buttonColor.secondary};
+  }
+
+  &::placeholder {
     color: ${(props) => props.theme.colors.metalDark};
-    border: 2px solid ${(props) => props.theme.colors.white};
-    border-right: 0;
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.vsm}) {
+    border-radius: 3px;
 
     &::placeholder {
-      color: ${(props) => props.theme.colors.metalDark};
+      text-align: center;
     }
   }
 `;
@@ -52,14 +77,33 @@ export const Button = styled(Link)`
 
   width: 210px;
   height: 70px;
-  background: #04d361;
-  border-radius: 0px 5px 5px 0px;
   border: 0;
-  color: ${(props) => props.theme.colors.white};
+  border-radius: 0 5px 5px 0;
+  padding: 0 24px;
+  background-color: ${(props) => props.theme.buttonColor.fourth};
+  color: ${(props) => props.theme.colors.metalDark};
+
+  color: ${(props) => props.theme.buttonColor.primary};
   font-weight: bold;
-  transition: background-color 0.2s;
+  box-shadow: -5px -5px 20px ${(props) => props.theme.buttonColor.secondary},
+    5px 5px 20px ${(props) => props.theme.buttonColor.primary};
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 
   &:hover {
-    background: ${shade(0.2, '#04d361')};
+    box-shadow: -2px -2px 5px ${(props) => props.theme.buttonColor.secondary},
+      2px 2px 5px ${(props) => props.theme.buttonColor.primary};
+    background-color: ${shade(0.03, '#f0f0f5')};
+  }
+
+  &:active {
+    box-shadow: inset 1px 1px 2px ${(props) => props.theme.buttonColor.primary},
+      inset -1px -1px 2px ${(props) => props.theme.buttonColor.secondary};
+  }
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.vsm}) {
+    margin-top: 15px;
+    border-radius: 3px;
+    width: 100%;
   }
 `;
