@@ -43,4 +43,14 @@ export default createGlobalStyle`
   ::placeholder {
     color: ${(props) => props.theme.colors.champagne};
   }
+
+  ::-webkit-scrollbar {
+  width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgb(100, 150, 165));
+    border-radius: 8px;
+  }
+
 `;

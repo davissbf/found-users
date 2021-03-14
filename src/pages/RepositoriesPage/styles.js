@@ -11,7 +11,7 @@ export const Container = styled.main`
 
 export const Sidebar = styled.aside`
   background: ${(props) => props.theme.colors.secondBackground};
-  min-width: 20rem;
+  min-width: 24rem;
   max-width: 100vh;
   overflow: hidden;
 `;

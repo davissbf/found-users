@@ -1,3 +1,5 @@
+import { shade } from 'polished';
+
 const light = {
   title: 'light',
 
@@ -34,33 +36,34 @@ const light = {
     danger: '#f37272',
     light: '#ecf0f1',
     dark: '#233240',
-    background: '#dee2e6',
+    background: shade(0.06, '#dee2e6'),
     secondBackground: '#ddddddbd',
     thirdBackground: '#a2aebb',
     container: '#e7ecef',
     text: '#3a3a3a',
     link: '#3498db',
+    cleaner: shade(1.5, '#ecf0f1'),
 
     // Brands
     apiGit: '#f0f0f5',
   },
   buttonColor: {
-    backgroundColor: '#f0f0f5',
+    backgroundColor: shade(0.06, '#dee2e6'),
   },
   // secondary: shade(0.04, '#ffffff'),
   inputStyle: {
-    boxShadow: 'inset 2px 2px 5px #babecc',
-    boxShadowSecond: 'inset -5px -5px 10px #f7fff7',
-    focus: 'inset 1px 1px 2px #babecc',
-    focusSecond: 'inset -1px -1px 2px #f7fff7',
+    boxShadow: 'inset 2px 2px 5px #babeccd1',
+    boxShadowSecond: 'inset -5px -5px 10px #f7fff771',
+    focus: 'inset 1px 1px 2px #babeccd1',
+    focusSecond: 'inset -1px -1px 2px #f7fff771',
   },
   buttonStyle: {
-    boxShadow: '-5px -5px 20px #f7fff7',
-    boxShadowSecond: '5px 5px 20px #babecc',
-    hover: '-2px -2px 5px #f7fff7',
-    hoverSecond: '2px 2px 5px #babecc',
-    active: 'inset 1px 1px 2px #babecc',
-    activeSecond: 'inset -1px -1px 2px #f7fff7',
+    boxShadow: '-5px -5px 20px #f7fff771',
+    boxShadowSecond: '5px 5px 20px #babeccd1',
+    hover: '-2px -2px 5px #f7fff771',
+    hoverSecond: '2px 2px 5px #babeccd1',
+    active: 'inset 1px 1px 2px #babeccd1',
+    activeSecond: 'inset -1px -1px 2px #f7fff771',
   },
 };
 

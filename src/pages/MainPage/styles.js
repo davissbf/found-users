@@ -40,6 +40,7 @@ export const Input = styled.input`
   box-shadow: ${(props) => props.theme.inputStyle.boxShadow},
     ${(props) => props.theme.inputStyle.boxShadowSecond};
   transition: all 0.2s ease-in-out;
+  background-color: ${(props) => props.theme.buttonColor.backgroundColor};
 
   appearance: none;
   -webkit-appearance: none;
@@ -48,7 +49,6 @@ export const Input = styled.input`
   font-size: 17px;
   border-radius: 5px 0 0 5px;
   padding: 0 24px;
-  background-color: ${(props) => props.theme.buttonColor.backgroundColor};
   color: ${(props) => props.theme.colors.metalDark};
 
   &:focus {

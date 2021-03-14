@@ -49,7 +49,7 @@ export const Selector = styled.button`
 `;
 
 export const Cleaner = styled.button`
-  background: transparent;
+  background: ${(props) => props.theme.colors.cleaner};
   color: ${(props) => props.theme.colors.text};
   border: none;
   text-align: left;
@@ -71,8 +71,7 @@ export const Cleaner = styled.button`
 
   &:hover {
     color: ${(props) => props.theme.colors.turquese};
-    box-shadow: ${(props) => props.theme.buttonStyle.hover},
-      ${(props) => props.theme.buttonStyle.hoverSecond};
+    box-shadow: ${(props) => props.theme.buttonStyle.hoverSecond};
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {

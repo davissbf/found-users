@@ -1,4 +1,4 @@
-import { shade } from 'polished';
+import { shade, lighten } from 'polished';
 
 const dark = {
   title: 'dark',
@@ -38,9 +38,10 @@ const dark = {
     dark: '#233240',
     background: '#131419',
     secondBackground: shade(0.2, '#131419'),
-    container: '#0e0e0ec9',
-    text: '#3a3a3a',
+    container: '#080705',
+    text: lighten(0.4, '#3a3a3a'),
     link: '#3498db',
+    cleaner: lighten(0.02, '#131419'),
 
     // Brands
     apiGit: '#131419',
@@ -50,17 +51,17 @@ const dark = {
   },
   inputStyle: {
     boxShadow: 'inset 2px 2px 6px rgba(0, 0, 0, 0.6)',
-    boxShadowSecond: 'inset -5px -5px 6px #1a1a1a1a',
-    focus: 'inset 1px 1px 2px rgba(0, 0, 0, 0.6)',
-    focusSecond: 'inset -1px -1px 2px #1a1a1a1a',
+    boxShadowSecond: 'inset -5px -5px 6px #33333300',
+    focus: 'inset 1px 1px 2px rgba(0, 0, 0, 0.8)',
+    focusSecond: 'inset -1px -1px 5px #333333b4',
   },
   buttonStyle: {
-    boxShadow: '-2px -2px 15px #1a1a1a1a',
+    boxShadow: '-2px -2px 15px #1a1a1a11',
     boxShadowSecond: '2px 2px 15px rgba(0, 0, 0, 0.6)',
-    hover: '-2px -2px 5px #1a1a1a1a',
+    hover: '-2px -2px 5px #33333352',
     hoverSecond: '2px 2px 5px rgba(0, 0, 0, 0.6)',
     active: 'inset 1px 1px 2px rgba(0, 0, 0, 0.6)',
-    activeSecond: 'inset -1px -1px 2px #1a1a1a1a',
+    activeSecond: 'inset -1px -1px 2px #333333b4',
   },
 };
 
