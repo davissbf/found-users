@@ -84,7 +84,6 @@ export const Button = styled(Link)`
   background-color: ${(props) => props.theme.buttonColor.backgroundColor};
   color: ${(props) => props.theme.colors.metalDark};
 
-  color: ${(props) => props.theme.buttonColor.primary};
   font-weight: bold;
   box-shadow: -5px -5px 20px ${(props) => props.theme.buttonColor.secondary},
     5px 5px 20px ${(props) => props.theme.buttonColor.primary};

@@ -48,6 +48,20 @@ const dark = {
     secondary: 'rgba(0, 0, 0, 0.6)',
     backgroundColor: '#131419',
   },
+  inputStyle: {
+    boxShadowFirst: '2px 2px 6px',
+    boxShadowSecond: '-5px -5px 6px',
+    boxShadowFocusFirst: '-5px -5px 6px',
+    boxShadowFocusSecond: '-1px -1px 2px',
+  },
+  buttonStyle: {
+    boxShadowFirst: '-2px -2px 15px',
+    boxShadowSecond: '5px 5px 15px',
+    boxShadowHoverFirst: '-2px -2px 5px',
+    boxShadowHoverSecond: '2px 2px 5px',
+    boxShadowActiveFirst: '1px 1px 2px',
+    boxShadowActiveSecond: '-1px -1px 2px',
+  },
 };
 
 const Dark = dark;

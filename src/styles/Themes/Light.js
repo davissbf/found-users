@@ -49,6 +49,20 @@ const light = {
     secondary: '#fff',
     backgroundColor: '#f0f0f5',
   },
+  inputStyle: {
+    boxShadowFirst: '2px 2px 5px',
+    boxShadowSecond: '-5px -5px 10px',
+    boxShadowFocusFirst: '-1px -1px 2px',
+    boxShadowFocusSecond: '-1px -1px 2px',
+  },
+  buttonStyle: {
+    boxShadowFirst: '-5px -5px 20px',
+    boxShadowSecond: '5px 5px 20px',
+    boxShadowHoverFirst: '-2px -2px 5px',
+    boxShadowHoverSecond: '2px 2px 5px',
+    boxShadowActiveFirst: '1px 1px 2px',
+    boxShadowActiveSecond: '-1px -1px 2px',
+  },
 };
 
 const Light = light;
