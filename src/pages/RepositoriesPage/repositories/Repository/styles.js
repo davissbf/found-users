@@ -12,8 +12,8 @@ export const Container = styled.div`
   padding: 1rem;
   cursor: pointer;
 
-  box-shadow: inset 2px 2px 5px ${(props) => props.theme.buttonColor.primary},
-    inset -5px -5px 10px ${(props) => props.theme.buttonColor.secondary};
+  box-shadow: ${(props) => props.theme.inputStyle.boxShadow},
+    ${(props) => props.theme.inputStyle.boxShadowSecond};
   transition: all 0.2s ease-in-out;
 
   appearance: none;
@@ -21,13 +21,13 @@ export const Container = styled.div`
   color: ${(props) => props.theme.colors.metalDark};
 
   &:hover {
-    box-shadow: -2px -2px 5px ${(props) => props.theme.buttonColor.secondary},
-      2px 2px 5px ${(props) => props.theme.buttonColor.primary};
+    box-shadow: ${(props) => props.theme.buttonStyle.hover},
+      ${(props) => props.theme.buttonStyle.hoverSecond};
   }
 
   &:active {
-    box-shadow: inset 1px 1px 2px ${(props) => props.theme.buttonColor.primary},
-      inset -1px -1px 2px ${(props) => props.theme.buttonColor.secondary};
+    box-shadow: ${(props) => props.theme.buttonStyle.active},
+      ${(props) => props.theme.buttonStyle.activeSecond};
   }
 `;
 

@@ -37,8 +37,8 @@ export const Input = styled.input`
   margin-right: 8px;
   height: 70px;
   width: 100%;
-  box-shadow: inset 2px 2px 5px ${(props) => props.theme.buttonColor.primary},
-    inset -5px -5px 10px ${(props) => props.theme.buttonColor.secondary};
+  box-shadow: ${(props) => props.theme.inputStyle.boxShadow},
+    ${(props) => props.theme.inputStyle.boxShadowSecond};
   transition: all 0.2s ease-in-out;
 
   appearance: none;
@@ -52,8 +52,8 @@ export const Input = styled.input`
   color: ${(props) => props.theme.colors.metalDark};
 
   &:focus {
-    box-shadow: inset 1px 1px 2px ${(props) => props.theme.buttonColor.primary},
-      inset -1px -1px 2px ${(props) => props.theme.buttonColor.secondary};
+    box-shadow: ${(props) => props.theme.inputStyle.focus},
+      ${(props) => props.theme.inputStyle.focusSecond};
   }
 
   &::placeholder {
@@ -83,19 +83,19 @@ export const Button = styled(Link)`
   color: ${(props) => props.theme.colors.metalDark};
 
   font-weight: bold;
-  box-shadow: -5px -5px 20px ${(props) => props.theme.buttonColor.secondary},
-    5px 5px 20px ${(props) => props.theme.buttonColor.primary};
+  box-shadow: ${(props) => props.theme.buttonStyle.boxShadow},
+    ${(props) => props.theme.buttonStyle.boxShadowSecond};
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 
   &:hover {
-    box-shadow: -2px -2px 5px ${(props) => props.theme.buttonColor.secondary},
-      2px 2px 5px ${(props) => props.theme.buttonColor.primary};
+    box-shadow: ${(props) => props.theme.buttonStyle.hover},
+      ${(props) => props.theme.buttonStyle.hoverSecond};
   }
 
   &:active {
-    box-shadow: inset 1px 1px 2px ${(props) => props.theme.buttonColor.primary},
-      inset -1px -1px 2px ${(props) => props.theme.buttonColor.secondary};
+    box-shadow: ${(props) => props.theme.buttonStyle.active},
+      ${(props) => props.theme.buttonStyle.activeSecond};
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.vsm}) {

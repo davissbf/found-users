@@ -59,20 +59,20 @@ export const Cleaner = styled.button`
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 
-  box-shadow: -5px -5px 20px ${(props) => props.theme.buttonColor.secondary},
-    5px 5px 20px ${(props) => props.theme.buttonColor.primary};
+  box-shadow: ${(props) => props.theme.buttonStyle.boxShadow},
+    ${(props) => props.theme.buttonStyle.boxShadowSecond};
   transition: all 0.2s ease-in-out;
 
   &:focus {
     color: ${(props) => props.theme.colors.turquese};
-    box-shadow: inset 1px 1px 2px ${(props) => props.theme.buttonColor.primary},
-      inset -1px -1px 2px ${(props) => props.theme.buttonColor.secondary};
+    box-shadow: ${(props) => props.theme.buttonStyle.active},
+      ${(props) => props.theme.buttonStyle.activeSecond};
   }
 
   &:hover {
     color: ${(props) => props.theme.colors.turquese};
-    box-shadow: -2px -2px 5px ${(props) => props.theme.buttonColor.secondary},
-      2px 2px 5px ${(props) => props.theme.buttonColor.primary};
+    box-shadow: ${(props) => props.theme.buttonStyle.hover},
+      ${(props) => props.theme.buttonStyle.hoverSecond};
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {

@@ -1,5 +1,3 @@
-import { shade } from 'polished';
-
 const light = {
   title: 'light',
 
@@ -39,7 +37,7 @@ const light = {
     background: '#dee2e6',
     secondBackground: '#ddddddbd',
     thirdBackground: '#a2aebb',
-    container: shade(0.02, '#e7ecef'),
+    container: '#e7ecef',
     text: '#3a3a3a',
     link: '#3498db',
 
@@ -47,23 +45,22 @@ const light = {
     apiGit: '#f0f0f5',
   },
   buttonColor: {
-    primary: '#babecc',
-    secondary: '#fff',
     backgroundColor: '#f0f0f5',
   },
+  // secondary: shade(0.04, '#ffffff'),
   inputStyle: {
-    boxShadowFirst: '2px 2px 5px',
-    boxShadowSecond: '-5px -5px 10px',
-    boxShadowFocusFirst: '-1px -1px 2px',
-    boxShadowFocusSecond: '-1px -1px 2px',
+    boxShadow: 'inset 2px 2px 5px #babecc',
+    boxShadowSecond: 'inset -5px -5px 10px #f7fff7',
+    focus: 'inset 1px 1px 2px #babecc',
+    focusSecond: 'inset -1px -1px 2px #f7fff7',
   },
   buttonStyle: {
-    boxShadowFirst: '-5px -5px 20px',
-    boxShadowSecond: '5px 5px 20px',
-    boxShadowHoverFirst: '-2px -2px 5px',
-    boxShadowHoverSecond: '2px 2px 5px',
-    boxShadowActiveFirst: '1px 1px 2px',
-    boxShadowActiveSecond: '-1px -1px 2px',
+    boxShadow: '-5px -5px 20px #f7fff7',
+    boxShadowSecond: '5px 5px 20px #babecc',
+    hover: '-2px -2px 5px #f7fff7',
+    hoverSecond: '2px 2px 5px #babecc',
+    active: 'inset 1px 1px 2px #babecc',
+    activeSecond: 'inset -1px -1px 2px #f7fff7',
   },
 };
 

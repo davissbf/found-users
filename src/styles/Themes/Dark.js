@@ -1,3 +1,5 @@
+import { shade } from 'polished';
+
 const dark = {
   title: 'dark',
 
@@ -35,7 +37,7 @@ const dark = {
     light: '#ecf0f1',
     dark: '#233240',
     background: '#131419',
-    secondBackground: '#070708',
+    secondBackground: shade(0.2, '#131419'),
     container: '#0e0e0ec9',
     text: '#3a3a3a',
     link: '#3498db',
@@ -44,23 +46,21 @@ const dark = {
     apiGit: '#131419',
   },
   buttonColor: {
-    primary: 'rgba(0, 0, 0, 0.6)',
-    secondary: 'rgba(255, 255, 255, 0.05)',
     backgroundColor: '#131419',
   },
   inputStyle: {
-    boxShadowFirst: '2px 2px 6px',
-    boxShadowSecond: '-5px -5px 6px',
-    boxShadowFocusFirst: '-5px -5px 6px',
-    boxShadowFocusSecond: '-1px -1px 2px',
+    boxShadow: 'inset 2px 2px 6px rgba(0, 0, 0, 0.6)',
+    boxShadowSecond: 'inset -5px -5px 6px #1a1a1a1a',
+    focus: 'inset 1px 1px 2px rgba(0, 0, 0, 0.6)',
+    focusSecond: 'inset -1px -1px 2px #1a1a1a1a',
   },
   buttonStyle: {
-    boxShadowFirst: '-2px -2px 15px',
-    boxShadowSecond: '5px 5px 15px',
-    boxShadowHoverFirst: '-2px -2px 5px',
-    boxShadowHoverSecond: '2px 2px 5px',
-    boxShadowActiveFirst: '1px 1px 2px',
-    boxShadowActiveSecond: '-1px -1px 2px',
+    boxShadow: '-2px -2px 15px #1a1a1a1a',
+    boxShadowSecond: '2px 2px 15px rgba(0, 0, 0, 0.6)',
+    hover: '-2px -2px 5px #1a1a1a1a',
+    hoverSecond: '2px 2px 5px rgba(0, 0, 0, 0.6)',
+    active: 'inset 1px 1px 2px rgba(0, 0, 0, 0.6)',
+    activeSecond: 'inset -1px -1px 2px #1a1a1a1a',
   },
 };
 
