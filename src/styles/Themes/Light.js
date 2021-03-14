@@ -1,3 +1,5 @@
+import { shade } from 'polished';
+
 const light = {
   title: 'light',
 
@@ -34,10 +36,10 @@ const light = {
     danger: '#f37272',
     light: '#ecf0f1',
     dark: '#233240',
-    background: '#f0f0f5',
-    secondBackground: '#111',
-    thirdBackground: '#ebecf0',
-    container: '#2d2d2d',
+    background: '#dee2e6',
+    secondBackground: '#ddddddbd',
+    thirdBackground: '#a2aebb',
+    container: shade(0.02, '#e7ecef'),
     text: '#3a3a3a',
     link: '#3498db',
 

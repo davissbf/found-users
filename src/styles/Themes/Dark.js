@@ -35,8 +35,8 @@ const dark = {
     light: '#ecf0f1',
     dark: '#233240',
     background: '#131419',
-    secondBackground: '#111',
-    container: '#2d2d2d',
+    secondBackground: '#070708',
+    container: '#0e0e0ec9',
     text: '#3a3a3a',
     link: '#3498db',
 

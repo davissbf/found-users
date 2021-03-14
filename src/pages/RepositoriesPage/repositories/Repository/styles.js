@@ -5,10 +5,30 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  background: rgba(0, 0, 0, 0.25);
+  background-color: ${(props) => props.theme.buttonColor.background};
+
   border-left: 3px solid
     ${(props) => props.color || props.theme.colors.champagneDark};
   padding: 1rem;
+  cursor: pointer;
+
+  box-shadow: inset 2px 2px 5px ${(props) => props.theme.buttonColor.primary},
+    inset -5px -5px 10px ${(props) => props.theme.buttonColor.secondary};
+  transition: all 0.2s ease-in-out;
+
+  appearance: none;
+  -webkit-appearance: none;
+  color: ${(props) => props.theme.colors.metalDark};
+
+  &:hover {
+    box-shadow: -2px -2px 5px ${(props) => props.theme.buttonColor.secondary},
+      2px 2px 5px ${(props) => props.theme.buttonColor.primary};
+  }
+
+  &:active {
+    box-shadow: inset 1px 1px 2px ${(props) => props.theme.buttonColor.primary},
+      inset -1px -1px 2px ${(props) => props.theme.buttonColor.secondary};
+  }
 `;
 
 export const Name = styled.h3`

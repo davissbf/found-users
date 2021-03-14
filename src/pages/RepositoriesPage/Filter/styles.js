@@ -54,13 +54,29 @@ export const Cleaner = styled.button`
   border: none;
   text-align: left;
   padding: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  box-shadow: -5px -5px 20px ${(props) => props.theme.buttonColor.secondary},
+    5px 5px 20px ${(props) => props.theme.buttonColor.primary};
+  transition: all 0.2s ease-in-out;
+
+  &:focus {
+    color: ${(props) => props.theme.colors.turquese};
+    box-shadow: inset 1px 1px 2px ${(props) => props.theme.buttonColor.primary},
+      inset -1px -1px 2px ${(props) => props.theme.buttonColor.secondary};
+  }
 
   &:hover {
-    color: rgba(255, 255, 255, 0.5);
+    color: ${(props) => props.theme.colors.turquese};
+    box-shadow: -2px -2px 5px ${(props) => props.theme.buttonColor.secondary},
+      2px 2px 5px ${(props) => props.theme.buttonColor.primary};
   }
 
   @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
-    text-align: center;
-    padding: 0 1rem;
+    padding: 5px 1rem;
+    border-radius: 20px;
   }
 `;

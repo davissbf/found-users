@@ -17,7 +17,6 @@ export const Container = styled.div`
 
   h1 {
     font-size: 2.5rem;
-    color: ${(props) => props.theme.colors.metalDark};
   }
 `;
 
