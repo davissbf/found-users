@@ -44,8 +44,8 @@ const dark = {
     apiGit: '#131419',
   },
   buttonColor: {
-    primary: 'rgba(255, 255, 255, 0.05)',
-    secondary: 'rgba(0, 0, 0, 0.6)',
+    primary: 'rgba(0, 0, 0, 0.6)',
+    secondary: 'rgba(255, 255, 255, 0.05)',
     backgroundColor: '#131419',
   },
   inputStyle: {

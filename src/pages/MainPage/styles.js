@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { shade } from 'polished';
 
 export const Container = styled.div`
   display: flex;
@@ -93,7 +92,6 @@ export const Button = styled(Link)`
   &:hover {
     box-shadow: -2px -2px 5px ${(props) => props.theme.buttonColor.secondary},
       2px 2px 5px ${(props) => props.theme.buttonColor.primary};
-    background-color: ${shade(0.03, '#f0f0f5')};
   }
 
   &:active {
