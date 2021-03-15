@@ -29,10 +29,10 @@ const config = {
   },
 };
 
-const Square = () => (
+const Cobweb = () => (
   <>
-    <ParticlesBg num={30} color="#233240" config={config} type="cobweb" bg />
+    <ParticlesBg num={40} color="#233240" config={config} type="cobweb" bg />
   </>
 );
 
-export default Square;
+export default Cobweb;
