@@ -17,6 +17,7 @@ const dark = {
     violetDark: '#8e44ad',
     yellow: '#f1c40f',
     yellowDark: '#f39c12',
+    yellowDarks: '#f39c42',
     orange: '#e67e22',
     orangeDark: '#d35400',
     red: '#e74c3c',
