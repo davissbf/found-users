@@ -14,7 +14,7 @@ const MainPage = () => {
     <Container>
       <Cobweb />
       <img src={logoIgm} alt="Logo Github" />
-      <h1>API Github</h1>
+      <h1>Get Usuários</h1>
       <Form>
         <Input
           type="text"
