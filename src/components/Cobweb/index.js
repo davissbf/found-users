@@ -31,7 +31,7 @@ const config = {
 
 const Cobweb = () => (
   <>
-    <ParticlesBg num={40} color="#1d2935" config={config} type="cobweb" bg />
+    <ParticlesBg num={40} color="#233240" config={config} type="cobweb" bg />
   </>
 );
 
